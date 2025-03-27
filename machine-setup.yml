@@ -1,0 +1,8 @@
+- name: first
+  hosts: target_group
+  tasks:
+    - name: ping
+      ansible.builtin.ping:
+    - name: print
+      ansible.builtin.debug:
+        msg: "Hello, world!"
